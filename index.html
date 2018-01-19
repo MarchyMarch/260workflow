@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<!-- Meta -->
@@ -14,24 +13,29 @@
 	<link rel="icon" type="image/png" href="icon.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="icon-16.png" sizes="16x16">
 
-	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="index-stylesheet.css">
-
 	<title>Kyle's Web Server</title>
+	<!-- Stylesheet -->
+	
+	<link rel="stylesheet" type="text/css" href="/index-stylesheet.css">
 </head>
 <body>
 	<!-- Header -->
 	<header>
 		<nav class="nav-bar" id="navBar">
-			<a href="/index.html"><img src="/images/website-logo.png"></a>
+			<a href="/index.html"><img src="/images/website-logo.png" id="logo" alt="web-logo"></a>
+
 			<ol class="nav-bar-sections">
 				<li class="nav-bar-section"><a href="/portfolio/">Portfolio</a></li>
 				<li class="nav-bar-section"><a href="/portfolio/contact.html">Contact Me</a>
 			</ol>
+
 		</nav>
 	</header>
-	<h1>Introduction</h1>
-	<p>Hi, my name is Kyle March.<br>This site is a server for BYU CS 260<br>
-		<a href="/portfolio">Portfolio Here</a></p>
+	<div class="intro">
+		<h1 class="title">Introduction</h1>
+		<p class="description">Hi, my name is Kyle March.<br>This site is a server for BYU CS 260<br>
+			<!-- <a href="/portfolio">Portfolio Here</a> -->
+		</p>
+	</div>
 </body>
 </html>

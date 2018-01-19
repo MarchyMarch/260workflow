@@ -29,3 +29,64 @@ p
 	font-size: 1.2em;
 	letter-spacing: .05em;
 }
+
+header{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0px;
+	padding: .5em;
+	z-index: 1000;
+	background-color: #65737e;
+}
+
+#logo{
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+}
+
+.nav-bar{
+	display: block;
+	float: none;
+	overflow: hidden;
+}
+
+.nav-bar-section{
+	display: inline-block;
+	float: right;
+}
+
+.nav-bar-section a{
+	display: block;
+	color: black;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav-bar-section a:hover{
+	background-color: #5e9af9;
+}
+
+body{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	background: white;
+}
+
+.intro{
+	padding-bottom: 100vh;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, black 0%, #65737e 20%);
+}
+
+.title{
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, .3);
+}
+
+.description{
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, .2);
+}

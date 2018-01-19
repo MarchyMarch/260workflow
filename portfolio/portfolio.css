@@ -1,0 +1,170 @@
+@charset "UTF-8"
+/* CSS for the portfolio dir. covers index.html, projects.html, experience.html, and contact.html */
+
+html,
+html *{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial;
+	font-size: 1vw;
+	background: white;
+}
+
+/*-----------------------------------------------------------------------*/
+/*----------------------------- Nav Bar ---------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+header{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	padding: .5em;
+	z-index: 1000;
+	background-color: #65737e;
+	height: auto;
+}
+
+#logo{
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+	margin-top: .5em;
+}
+
+.nav-bar{
+	width: 100%;
+	display: block;
+	float: none;
+	overflow: hidden;
+}
+
+.menu-list{
+	vertical-align: middle;
+	padding-right: .5em;
+	padding-bottom: .5em;
+}
+
+.menu-selection{
+	display: inline-block;
+	float: right;
+	vertical-align: middle;
+}
+
+.menu-selection a{
+	display: block;
+	color: black;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.menu-selection a:hover{
+	background-color: #5e9af9;
+}
+
+/*------------------- Applies to all h2 ---------------------------------*/
+
+h2{
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------------- HTML Specific -------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.name{
+	text-align: center;
+	font-size: 3em;
+	color: #5e9af9;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, .25);
+}
+
+.about-intro{
+	position: relative;
+	padding-top: 10vh;
+	background-image: linear-gradient(to bottom, black 0%, #65737e 20%);
+}
+
+.about-pic img{
+	padding-top: 5em;
+	position: relative;
+	height: 50vh;
+	display: block;
+	margin: auto;
+}
+
+/*--------------------------- experience.html ---------------------------*/
+
+.experience-top{
+	width: 100%;
+	position: relative;
+	padding-top: 10vh;
+	background-image: linear-gradient(to bottom right, black 0%, #65737e 25%);
+}
+
+/*------------------------- projects.html -------------------------------*/
+
+.projects{
+	width: 100%;
+	position: relative;
+	padding-top: 10vh;
+	background-image: linear-gradient(to bottom right, #65737e 0%, black 100%);	
+}
+
+/*-------------------------- contact.html -------------------------------*/
+
+.contact-div{
+	width: 100%;
+	position: relative;
+	padding-top: 10vh;
+	background-image: linear-gradient(to bottom, black 0%, #65737e 50%);
+}
+
+/*-----------------------------------------------------------------------*/
+/*------------------------ general columns ------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.info-section{
+	padding-top: 0em;
+	position: relative;
+	width: 100%
+	overflow: hidden;
+}
+
+.info-article{
+	display: flex;
+	height: 25vw;
+}
+
+.info-article .info-title-column{
+	width: 25%;
+	text-transform: uppercase;
+	font-size: 3em;
+	letter-spacing: .1em;
+	align-self: center;
+}
+
+.info-article .info-column{
+	width: 75%;
+	font-size: 1.5em;
+	letter-spacing: .05em;
+	align-self: center;
+}
+
+.info-article .info-list-column{
+	list-style: none;
+	align-self: center;
+	width: 75%;
+}
+
+.info-article .info-list-column li{
+	font-size: 1.5em;
+	letter-spacing: .05em;
+}
