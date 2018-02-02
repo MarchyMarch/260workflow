@@ -41,6 +41,7 @@ header{
 .menu-item{
 	display: inline-block;
 	float: right;
+	padding-right: .5vw;
 }
 
 .menu-item a{
@@ -50,4 +51,9 @@ header{
 	padding: 14px 20px;
 	text-decoration: none;
 	font-family: Gotham, "Helcetica Neue", Helcetica, Arial, "sans-serrif";
+}
+
+.menu-item a:hover{
+	background-color: rgb(75, 131, 218);
+	border-bottom: 1px solid #c5af7d;
 }
