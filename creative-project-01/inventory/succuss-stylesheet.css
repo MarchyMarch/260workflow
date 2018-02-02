@@ -1,0 +1,46 @@
+@charset "UTF-8"
+/* Stylesheet for the success screen */
+
+html,
+html *{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #fffff0;
+}
+
+/*--------------------------------------*/
+/*-------------- Main ------------------*/
+/*--------------------------------------*/
+
+h1{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serrif";
+	font-size: 3em;
+	color: #002255;
+	text-shadow: 2px 2px 8px rgba(197, 125, 175, .5);
+	letter-spacing: .1em;
+	text-align: center;
+	padding-top: 2.5vw;
+	padding-bottom: 2.5vw;
+}
+
+.return{
+	width: 15%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin-bottom: 2.5vw;
+	text-align: center;
+	background: #002255;
+	border: 2px solid #c5af7d
+}
+
+.return a{
+	text-decoration: none;
+	color: #c5af7d;
+}

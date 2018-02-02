@@ -1,0 +1,74 @@
+@charset "UTF-8"
+/* CSS Document for the footer section of creative project 01 */
+
+/*---------------------------------------------------*/
+/*-------------------- Footer -----------------------*/
+/*---------------------------------------------------*/
+footer{
+	padding-top: 10em;
+	background-color: #002255;
+}
+
+.footer{
+	width: 100%;
+	height: 5.2vw;
+	background-color: #002255;
+	padding-bottom: 1vw;
+}
+
+.footer-info{
+	margin-top: .5vw;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	float: left;
+}
+
+.footer-info p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #c5af7d;
+	display: inline-block;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	padding-left: 2em;
+	float: left;
+}
+
+.footer-content{
+	width: auto;
+	float: right;
+	display: inline;
+	list-style-type: none;
+}
+
+.footer-content a{
+	line-height: 3em;
+	display: inline;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.footer-content a:hover{
+
+}
+
+.footer-content a img{
+	width: auto;
+	height: 8em;
+	vertical-align: middle;
+}
+
+.footer-content a .footer-content-hover{
+	display: none;
+}
+
+.footer-content a:hover .footer-content-default{
+	display: none;
+}
+
+.footer-content a:hover .footer-content-hover{
+	display: inline;
+}

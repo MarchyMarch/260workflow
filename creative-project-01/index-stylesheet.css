@@ -1,0 +1,58 @@
+@charset "UTF-8"
+/* Stylesheet for index.html of creative project 1 */
+
+html,
+html *{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #fffff0;
+}
+
+/*--------------------------------------*/
+/*-------------- Main ------------------*/
+/*--------------------------------------*/
+
+.main-title{
+	background:#fffff0;
+	width: 80%;
+	position: relative;
+	overflow: hidden;
+	padding-top: 5em;
+	padding-bottom: 5em; 
+	display: block;
+	margin: 0 auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serrif";
+	text-align: center;
+}
+
+.main-title h1{
+	position: absolute;
+	text-align: center;
+	font-size: 3em;
+	letter-spacing: .1em;
+	color: #002255;
+	text-shadow: 2px 2px 8px rgba(197, 125, 175, .5);
+	top: 18vw;
+	left: 30%;
+}
+
+.main-title p{
+	position: absolute;
+	text-align: center;
+	width: 60%;
+	font-size: 1.5em;
+	margin: 0 1.5em;
+	padding-top: 1.5em;
+	color: #002255;
+	text-shadow: 2px 2px 6px rgba(197, 125, 175, .5);
+	top: 25vw;
+	left: 20%;
+}
+
+.main-title img{
+	width: 70vw;
+}
