@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta and Favicon -->
+    <title>Weather</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text="type/javascript" src="/script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav-div">
+        <a href="index.html">Weather</a>
+        <a href="stack.html">Stack Overflow</a>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Weather Section -->
+      <div id="weather">
+        <h1>Weather</h1>
+        <form class="weather-form">
+          <div class="input-container">
+            <label class="city-label" for="city">Enter a U.S. city: </label>
+            <input type="text" name="city" id="weatherInput">
+            <input type="submit" name="Submit" id="weatherSubmit" value="Submit">
+          </div>
+        </form>
+        <!-- Results to populate -->
+        <div id="weatherResults"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <a href="https://github.com/BYU-CS260-Winter-2018/lab-2-MarchyMarch">
+        <img src="images/github-black.png">
+      </a>
+    </footer>
+  </body>
+</html>
