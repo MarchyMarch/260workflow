@@ -1,0 +1,211 @@
+@charset "UTF-8"
+
+html,
+html *{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	background-color: #f1f1f1;
+}
+
+/***************************/
+/********* Header **********/
+/***************************/
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #404040;
+	top: 0;
+	position: fixed;
+	z-index: 1000;
+}
+
+.parks-and-rec-logo{
+	padding-left: 1vw;
+}
+
+.parks-and-rec-logo img{
+	height: 80px;
+	float: left;
+}
+
+.nbc-logo{
+	padding-right: 1vw;
+	padding-top: 10px;
+}
+
+.nbc-logo img{
+	height: 80px;
+	float: right;
+}
+
+/***************************/
+/********** Main ***********/
+/***************************/
+
+main{
+	margin-top: 100px;
+	width: 100%;
+	position: relative;
+}
+
+h1{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	text-align: center;
+	font-size: 3vw;
+	padding-top: 1.5vw;
+}
+
+h2{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+main img{
+	display: block;
+	margin: 2vw auto;
+	width: 60vw;
+}
+
+/***************************/
+/******* Quote Input *******/
+/***************************/
+
+.input-div{
+	align-content: center;
+	display: block;
+	margin: 0 auto;
+	width: 24%;
+	position: relative;
+	overflow: hidden;
+	margin-top: 3vw;
+	margin-bottom: 2vw;
+}
+
+.input-div label{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	text-align: center;
+	font-size: 1vw;
+	padding-right: .5vw;
+	padding-left: .25vw;
+}
+
+.input-div select{
+	padding-right: .5vw;
+	font-size: 1vw;
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+}
+
+.input-div input{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	font-size: 1vw;
+	width: 5vw;
+	margin-left: .5vw;
+}
+
+/****************************/
+/***** Returned Quotes ******/
+/****************************/
+
+#retunedQuote{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.quote-article{
+	display: flex;
+	width: 100%;
+}
+
+.quote-article .img-container{
+	padding: 0;
+	width: 20%;
+}
+
+.quote-div{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.quote-article .quote-container{
+	width: 80%;
+}
+
+.img-container img{
+	width: 6vw;
+	height: 6vw;
+	display: block;
+	margin: 2vw auto;
+	float: right;
+}
+
+.quote-div p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	font-size: 2vw;
+	float: left;
+	padding-left: 1vw;
+}
+
+/****************************/
+/********* Footer ***********/
+/****************************/
+
+footer{
+	position: relative;
+	background-color: #404040;
+	width: 100%;
+	height: 10vw;
+	display: block;
+	bottom: 0;
+	margin: 0 0;
+}
+
+.left{
+	float: left;
+	padding-right: 1vw;
+	padding-top: 2.5vw;
+}
+
+.left p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	font-size: 1.2vw;
+	margin-left: 1vw;
+}
+
+.right{
+	float: right;
+	display: block;
+}
+
+.right a{
+
+}
+
+.right a:hover{
+
+}
+
+.right a img{
+	width: 10vw;
+}
+
+.right a .footer-img-hover{
+	display: none;
+}
+
+.right a:hover .footer-img-default{
+	display: none;
+}
+
+.right a:hover .footer-img-hover{
+	display: inline;
+}

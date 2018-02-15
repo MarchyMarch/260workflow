@@ -21,9 +21,12 @@ $(document).ready(function(){
 				for(var i = 0; i < json.length; i++){
 					console.log("for loop");
 					results += '<div class="quote-div">';
-					results += '<img src="./images/swanson-point.png">'
+					results += '<article class="quote-article">';
+					results += '<div class="img-container">'
+					results += '<img src="./images/swanson-point.png">';
+					results += '</div><div class="quote-container">';
 					results += '<p>' + json[i]; + '</p>';
-					results += '</div>'
+					results += '</div></article></div>';
 				}
 				console.log("Results: " + results);
 				$("#returned-quotes").html(results);
