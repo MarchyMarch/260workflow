@@ -1,0 +1,136 @@
+@font-face{
+  font-family: "Hearthstone Medium";
+  src: url("fonts/OPTIBelwe-Medium.otf");
+}
+
+h1, h2, p{
+	font-family: 'Hearthstone Medium', Ubuntu, Helvetica;
+	margin-bottom: 4vw;
+	margin-top: 4vw;
+  text-align: center;
+  text-shadow: 0px 0px 8px rgba(211, 211, 211, .75);
+}
+
+h1{
+  font-size: 4vw;
+  margin-top: 1vw;
+}
+
+h2{
+  font-size: 3.5vw;
+}
+
+p{
+  text-align: center;
+  margin: 1vw auto;
+  font-size: 1.5vw;
+}
+
+input, button{
+	font-family: 'Hearthstone Medium', Ubuntu, Helvetica;
+  display: inline-block;
+  margin: 1vw auto;
+  font-size: 1vw;
+}
+
+input{
+  height: 2vw;
+  width: 20vw;
+  margin-right: .4vw;
+  border-radius: 4px;
+}
+
+button{
+  height: 2vw;
+  width: 5vw;
+  margin-left: .4vw;
+  margin-right: .4vw;
+  border-radius: 4px;
+}
+
+#user-input{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loader {
+  display: block;
+  margin: 0 auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #4242f4;
+  border-right: 16px solid #3498db;
+  border-bottom: 16px solid #4242f4;
+  border-left: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#title{
+  height: 12vw;
+  display: block;
+  margin: 0 auto;
+}
+
+body{
+  background-image: url("images/wood-00.jpg");
+}
+
+#card-result{
+  text-align: center;
+}
+
+#card-img-div{
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 7vw;
+  display: block;
+  bottom: 0;
+  margin: 0 0;
+}
+
+.left{
+  float: left;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  margin-top: 1vw;
+}
+
+.left p{
+  font-size: 1.2vw;
+  text-align: right;
+  float: right;
+  margin-left: 1vw;
+}
+
+.left img{
+  height: 4vw;
+}
+
+.right{
+  float: right;
+  display: block;
+}
+
+.right img{
+  height: 7vw;
+}

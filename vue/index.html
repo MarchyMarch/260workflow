@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Spotify</title>
+	<link rel="shorcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" href="images/hearthstone-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/hearthstone-16x16.png" sizes="16x16">
+	<title>Hearthstone Card Guide</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="app">
-		
+		<a href="https://playhearthstone.com/en-us/" target="_blank"><img id="title" src="images/hearthstone-title.png"></a>
+		<h1>Card Guide</h1>
+		<div id="user-input">
+			<input type="text" name="search" placeholder="Search for a card" v-model="query">
+			<button type="submit" name="submit" v-on:click="searchCard">Submit</button>
+			<button v-on:click="randomCard">Random</button>
+		</div>
+		<div v-if="noCard">
+			<h2>Search a Card or Choose a Random Card</h2>
+		</div>
+		<div v-else>
+			<div v-if="loading">
+				<div class="loader"></div>
+			</div>
+			<div v-else>
+				<div v-if="search">
+				<div id="card-result" v-for="card in cards">
+				<h2>{{card.name}}</h2>
+				<article id="card-article">
+					<div id="card-img-div">
+						<span v-bind:title="card.flavor"><img v-bind:src="card.img"></span>
+						<span v-bind:title="card.flavor"><img v-bind:src="card.imgGold"></span>
+					</div>
+					<div id="card-info-div">
+						<p><b>Name: </b> {{card.name}}</p>
+						<p><b>Card Set: </b> {{card.cardSet}}</p>
+						<p><b>Class: </b> {{card.playerClass}}</p>
+						<p><b>Type: </b> {{card.type}}</p>
+						<div v-if="card.type === 'Minion'">
+							<p><b>Rarity: </b> {{card.rarity}}</p>
+							<p><b>Mana Cost: </b> {{card.cost}}</p>
+							<p><b> Attack: </b> {{card.attack}}</p>
+							<p><b> Health: </b> {{card.health}}</p>
+						</div>
+					</div>
+				</article>
+				</div>
+				</div>
+				<div v-else>
+					<h2>Error: {{errMessage}}</h2>
+				</div>
+			</div>
+		</div>
 	</div>
-
+	<footer>
+		<div class="left">
+			<a href="https://www.blizzard.com/en-us/" target="_blank"><img src="images/blizzard-logo.jpg"></a>
+			<p>Heartstone is copyright of Blizzard Ent.</p>
+		</div>
+		<div class="right">
+			<a href="https://github.com/MarchyMarch/260/tree/d73cfc55f8f98e4b77f7844d87e489a5a27a7b5e/html/vue" target="_blank"><img src="images/github-black.png"></a>
+		</div>
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
